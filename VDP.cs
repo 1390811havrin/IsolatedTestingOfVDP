@@ -31,32 +31,50 @@ namespace IsolatedTestingOfVDP
         {
             Bitmap aBuilding;
 
-            if (name == "fixedImage1")
+            if (name == "Baracks")
             {
-                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["fixedImage1"]);
+                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["BaracksCell.jpg"]);
                 return aBuilding;
             }
-            else if (name == "fixedImage2")
+            else if (name == "BlackSmith")
             {
-                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["fixedImage2"]);
-                return aBuilding;
-
-            }
-            else if (name == "fixedImage3")
-            {
-                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["fixedImage3"]);
+                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["BlackSmithCell.jpg"]);
                 return aBuilding;
 
             }
-            else if (name == "fixedImage4")
+            else if (name == "Farm")
             {
-                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["fixedImage4"]);
+                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["FarmCell.png"]);
                 return aBuilding;
 
             }
-            else if (name == "fixedImage5")
+            else if (name == "Grass")
             {
-                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["fixedImage5"]);
+                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["GrassCell.jpg"]);
+                return aBuilding;
+
+            }
+            else if (name == "Magic")
+            {
+                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["MagicCell.jpg"]);
+                return aBuilding;
+
+            }
+            else if (name == "Science")
+            {
+                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["ScienceCell.jpg"]);
+                return aBuilding;
+
+            }
+            else if (name == "Storage")
+            {
+                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["StorageCell.jpg"]);
+                return aBuilding;
+
+            }
+            else if (name == "Wall")
+            {
+                aBuilding = (Bitmap)Image.FromFile(ConfigurationManager.AppSettings["WallCell.jpg"]);
                 return aBuilding;
 
             }
