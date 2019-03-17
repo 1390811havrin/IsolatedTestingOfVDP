@@ -7,20 +7,25 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 
+
 namespace IsolatedTestingOfVDP
 {
-    class Program
+    public class VDPProgram
     {
-        static void Main(string[] args)
+  
+
+        public static void Main(string[] args)
         {
 
             //for testing purposes only
 
-            string[] test = new string[4];
-            test[0] = "1,fixedImage1,1,1,7,9";
-            test[1] = "1,fixedImage1,1,1,7,10";
-            test[2] = "1,fixedImage2,1,1,7,11";
-            test[3] = "1,fixedImage3,1,1,7,12";
+            string[] test = args;
+            /*
+            test[0] = "1,Baracks,1,1,7,9";
+            test[1] = "1,Baracks,1,1,7,10";
+            test[2] = "1,BlackSmith,1,1,7,11";
+            test[3] = "1,Farm,1,1,7,12";
+            */
             VDP vdp = new VDP();
 
             //We will be receiving and processing the strings one at a time
